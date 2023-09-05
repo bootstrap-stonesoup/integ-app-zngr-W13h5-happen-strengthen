@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-knt0
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-zngr/devfile-sample-python-basic-knt0@sha256:8db7d122fe782337b7aea3c34cfb881e8c0951aef6bc824817f93cc130612bf4
+        name: my-python
+        resources: {}
+status: {}
